@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+:root{
+    --color-primary: #00A3E8;
+    --color-primary-variant: #7fd1f3 ;
+    --color-bg-1: #EFAC00;
+    --color-bg-1-variant: #f7d57f;
+    --color-bg-2: #B28107;
+    --color-bg-3: #C6BE00; 
+    --color-bg-4: #724708; 
+    --color-bg-5: #937424; 
+    --color-white: #fff;
+    --color-black: #000;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    color: var(--color-white);
+    text-decoration: none;
+    list-style: none;
+}
+img{
+    display: block;
+    width: 100%;
+}
+/*--------------------NAV------------------------*/
+#navbar{
+    height: 5rem;
+    z-index: 999;
+    position: fixed;
+    transition: all 0.1s linear;
+    background-color: var(--color-primary);
+}
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.logo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 4rem;
+    border-radius: 50%;
+}
+.logo_text{
+    margin-left: 2rem;
+    text-align: center;
+}
+.logo_text h3{
+    color: var(--color-bg-1);
+}
+
+.nav_menu{
+    position: relative;
+    right: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 1rem;
+}
+.nav_menu a{
+   color: var(--color-white);
+   text-decoration: none;
+   font-size: 1rem;
+   text-transform: uppercase;
+   font-weight: 300;
+}
+/*--------------------END NAV------------------------*/
