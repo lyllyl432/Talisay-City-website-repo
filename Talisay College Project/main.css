@@ -74,7 +74,7 @@ img{
 }
 /*--------------------END NAV------------------------*/
 /*--------------------HEADER------------------------*/
-.header{
+/* .header{
     position: relative;
     height: 100vh;
     background: url(img/header-bg.png);
@@ -94,7 +94,92 @@ img{
     z-index: 2;
     opacity: 30%;
     
+} */
+ #header{
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    top: 5rem;
+}
+.header_text{
+    display: grid;
+    place-self: center;
+    color: var(--color-bg-2);
+}
+.header_text h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
-
 /*--------------------END HEADER------------------------*/
+/*--------------------CAROUSEL------------------------*/
+.swiper_container{
+    position: relative;
+    height: 100vh;
+    margin-top: 10rem;
+    background: linear-gradient(#f7d57f,#EFAC00);
+}
+.title{
+    display: grid;
+    place-items: center;
+    padding: 3rem 0 0 1rem;
+    color: var(--color-bg-4);
+}
+.title h1{
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.swiper {
+    margin: 2rem auto;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #000;
+    height: 20rem !important;
+    width: 100%;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-pagination{
+    position: absolute;
+    bottom: 15% !important;
+  }
+/*--------------------END CAROUSEL------------------------*/
+/*--------------------GRID IMAGE------------------------*/
+#grid_image{
+    height: 100vh;
+    background: var(--color-bg-4);
+}
+#grid_image .title{
+    color: var(--color-white);
+}
+#grid_image .grid_img{
+    height: 20rem;
+    background-size: cover;
+}
+
+/*--------------------END GRID IMAGE------------------------*/
